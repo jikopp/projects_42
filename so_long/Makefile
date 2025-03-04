@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ferenc <ferenc@student.42.fr>              +#+  +:+       +#+         #
+#    By: fnagy <fnagy@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/09 13:56:48 by fnagy             #+#    #+#              #
-#    Updated: 2025/01/20 16:02:25 by ferenc           ###   ########.fr        #
+#    Updated: 2025/03/04 11:30:52 by fnagy            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = so_long
 BIN = bin
 
-SRC  =	src/test.c\
+SRC  =	src/main.c\
 		src/map_open.c\
 		src/free_game.c\
 		src/open_images.c\
