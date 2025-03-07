@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   door_lock.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ferenc <ferenc@student.42.fr>              +#+  +:+       +#+        */
+/*   By: fnagy <fnagy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 15:50:59 by ferenc            #+#    #+#             */
-/*   Updated: 2025/01/20 15:56:04 by ferenc           ###   ########.fr       */
+/*   Updated: 2025/03/07 13:20:22 by fnagy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	door_locked_up_down(t_win *game, int door_row, int door_col)
 		put_player(game, door_col, door_row + 1);
 		mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, \
 		game->textures.ground, door_col * 32, (door_row - 1) * 32);
+		game->moves += 1;
 	}
 	else if (game->player_position == DOWN)
 	{
@@ -37,6 +38,7 @@ void	door_locked_up_down(t_win *game, int door_row, int door_col)
 		put_player(game, door_col, door_row - 1);
 		mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, \
 		game->textures.ground, door_col * 32, (door_row + 1) * 32);
+		game->moves += 1;
 	}
 }
 
@@ -53,6 +55,7 @@ void	door_locked_right_left(t_win *game, int door_row, int door_col)
 		put_player(game, door_col + 1, door_row);
 		mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, \
 		game->textures.ground, (door_col - 1) * 32, door_row * 32);
+		game->moves += 1;
 	}
 	else if (game->player_position == LEFT)
 	{
@@ -65,5 +68,6 @@ void	door_locked_right_left(t_win *game, int door_row, int door_col)
 		put_player(game, door_col - 1, door_row);
 		mlx_put_image_to_window(game->mlx_ptr, game->win_ptr, \
 		game->textures.ground, (door_col + 1) * 32, door_row * 32);
+		game->moves += 1;
 	}
 }
