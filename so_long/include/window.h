@@ -6,7 +6,7 @@
 /*   By: fnagy <fnagy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/12 13:06:23 by fnagy             #+#    #+#             */
-/*   Updated: 2025/03/06 15:27:24 by fnagy            ###   ########.fr       */
+/*   Updated: 2025/03/07 15:20:31 by fnagy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,6 @@ void	add_graphics(t_win *game);
 void	print_map(char *line, t_win *game, int index);
 
 void	put_player(t_win *game, int width, int height);
-void	door_locked_up_down(t_win *game, int door_row, int door_col);
 
 void	put_player(t_win *game, int width, int height);
 void	move_top(t_win *game, int i, int j);
@@ -102,8 +101,11 @@ int		check_rows(t_win *game, int linecount);
 int		check_last_row(char *line);
 int		check_filename(char *file);
 
-void	door_locked_up_down(t_win *game, int door_row, int door_col);
-void	door_locked_right_left(t_win *game, int door_row, int door_col);
+void	door_locked_up_down_right_left(t_win *game, int door_row, int door_col);
+void	jump_up(t_win *game, int door_row, int door_col);
+void	jump_down(t_win *game, int door_row, int door_col);
+void	jump_right(t_win *game, int door_row, int door_col);
+void	jump_left(t_win *game, int door_row, int door_col);
 
 int		check_playable(t_win *game);
 void	check_playable_row(t_win *game, int *c, int *p, int *e);

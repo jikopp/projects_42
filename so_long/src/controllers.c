@@ -6,7 +6,7 @@
 /*   By: fnagy <fnagy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 15:50:44 by ferenc            #+#    #+#             */
-/*   Updated: 2025/03/04 15:55:17 by fnagy            ###   ########.fr       */
+/*   Updated: 2025/03/07 15:19:26 by fnagy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	move_top(t_win *game, int i, int j)
 		on_destroy(game);
 	else if (game->map[j + 1][i] == 'E')
 	{
-		door_locked_up_down(game, j + 1, i);
+		door_locked_up_down_right_left(game, j + 1, i);
 		return ;
 	}
 	game->moves += 1;
@@ -51,7 +51,7 @@ void	move_down(t_win *game, int i, int j)
 		on_destroy(game);
 	else if (game->map[j - 1][i] == 'E')
 	{
-		door_locked_up_down(game, j - 1, i);
+		door_locked_up_down_right_left(game, j - 1, i);
 		return ;
 	}
 	game->moves += 1;
@@ -71,7 +71,7 @@ void	move_left(t_win *game, int i, int j)
 		on_destroy(game);
 	else if (game->map[j][i - 1] == 'E')
 	{
-		door_locked_right_left(game, j, i - 1);
+		door_locked_up_down_right_left(game, j, i - 1);
 		return ;
 	}
 	game->moves += 1;
@@ -91,7 +91,7 @@ void	move_right(t_win *game, int i, int j)
 		on_destroy(game);
 	else if (game->map[j][i + 1] == 'E')
 	{
-		door_locked_right_left(game, j, i + 1);
+		door_locked_up_down_right_left(game, j, i + 1);
 		return ;
 	}
 	game->moves += 1;

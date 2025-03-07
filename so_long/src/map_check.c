@@ -6,11 +6,12 @@
 /*   By: fnagy <fnagy@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 15:51:19 by ferenc            #+#    #+#             */
-/*   Updated: 2025/03/06 15:39:29 by fnagy            ###   ########.fr       */
+/*   Updated: 2025/03/06 14:55:48 by fnagy            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/window.h"
+/* if (i != game->map_cols - 1)*/
 
 int	check_last_row_rectan(t_win *game)
 {
