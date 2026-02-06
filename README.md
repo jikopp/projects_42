@@ -52,18 +52,31 @@
 
 ------TEXT HERE-----
 
-### 📚 Resources
+#
+
+
+## 📚 Resources
 
 ------TEXT HERE-----
 
 ### References
 
-- ------TEXT HERE-----
-- ------TEXT HERE-----
-- ------TEXT HERE-----
+- Lode's Computer Graphics Tutorial
+https://lodev.org/cgtutor/raycasting.html
+
+- Super Fast Ray Casting in Tiled Worlds using DDA
+https://www.youtube.com/watch?v=NbSee-XM7WA
+
+- 42 Docs MiniLibX, Events
+https://harm-smits.github.io/42docs/libs/minilibx/events.html
+
+- cub3d introduction by Jun Han Ng 
+https://hackmd.io/@nszl/H1LXByIE2
+
 
 ### Use of Artificial Intelligence
 
-------TEXT HERE-----
-
+- design ide for README.me file
+- educational use of ChatGPT about Raycasting
+- getting tips to check to make sure project will not fail
 
