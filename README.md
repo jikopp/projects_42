@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by <login1>[, <login2>[, <login3>[...]]].*
+*This project has been created as part of the 42 curriculum by <vcerny>[, <fnagy>[, <login3>[...]]].*
 
 ---
 
@@ -50,5 +50,20 @@
 
 ### Compilation
 
-```bash
 ------TEXT HERE-----
+
+### 📚 Resources
+
+------TEXT HERE-----
+
+### References
+
+- ------TEXT HERE-----
+- ------TEXT HERE-----
+- ------TEXT HERE-----
+
+### Use of Artificial Intelligence
+
+------TEXT HERE-----
+
+
